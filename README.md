@@ -18,10 +18,6 @@ This repository contains the data and source code used in our research titled "E
 
 - **`tests/`**: Unit and integration tests for code validation.
 
-- **`examples/`**: Sample scripts demonstrating how to use the code and data.
-
-- **`docs/`**: Additional documentation and technical notes.
-
 - **`README.md`**: This file.
 
 ## Installation
