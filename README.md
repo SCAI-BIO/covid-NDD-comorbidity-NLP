@@ -1,4 +1,4 @@
-# covid-NDD-comorbidity-NLP
+# Exploring the Current State of Knowledge on the Link Between COVID-19 and Neurodegeneration using Natural language Processing and Knowledge Graphs
 
 ## Overview
 
