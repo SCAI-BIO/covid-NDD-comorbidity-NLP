@@ -1,6 +1,6 @@
 
 # Exploring the Current State of Knowledge on the Link Between COVID-19 and Neurodegeneration
-
+This repository contains the data and source code used in our research titled "Exploring the Current State of Knowledge on the Link Between COVID-19 and Neurodegeneration using Natural language Processing and Knowledge Graphs".
 ## Project Structure
 
 - **`data/`**: Contains datasets used and generated in the study.
