@@ -48,5 +48,20 @@ covid-NDD-comorbidity-NLP/
 └── tests/                           # Unit and integration tests
     ├── test_data_processing.py      # Tests for data processing functions
     └── test_model.py  
+'''
+## Contact
 
+For any questions, suggestions, or collaborations, please contact:
+
+- **Dr. Jane Doe**  
+  [jane.doe@example.com](mailto:jane.doe@example.com)  
+  [LinkedIn Profile](https://www.linkedin.com/in/jane-doe)  
+  [GitHub Profile](https://github.com/janedoe)
+
+- **John Smith**  
+  [john.smith@example.com](mailto:john.smith@example.com)  
+  [LinkedIn Profile](https://www.linkedin.com/in/john-smith)  
+  [GitHub Profile](https://github.com/johnsmith)
+
+Feel free to reach out for any questions or discussions regarding the project.
 
