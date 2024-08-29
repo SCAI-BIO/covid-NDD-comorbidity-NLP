@@ -16,7 +16,7 @@ This repository contains the data and source code used in our research titled "E
 ## Project Structure
 
 ```plaintext
-image-biomedical-info-extraction/
+covid-NDD-comorbidity-NLP/
 │
 ├── README.md                        # Project overview and instructions
 ├── LICENSE                          # License information
