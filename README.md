@@ -1,9 +1,8 @@
-
 # Exploring the Current State of Knowledge on the Link Between COVID-19 and Neurodegeneration
+
 This repository contains the data and source code used in our research titled "Exploring the Current State of Knowledge on the Link Between COVID-19 and Neurodegeneration using Natural language Processing and Knowledge Graphs".
 
 ## Table of Contents
-
 - [Project Structure](#project-structure)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -47,21 +46,16 @@ covid-NDD-comorbidity-NLP/
 │
 └── tests/                           # Unit and integration tests
     ├── test_data_processing.py      # Tests for data processing functions
-    └── test_model.py  
-'''
+    └── test_model.py                # Tests for model functions
+```
+
 ## Contact
 
 For any questions, suggestions, or collaborations, please contact:
 
-- **Dr. Jane Doe**  
-  [jane.doe@example.com](mailto:jane.doe@example.com)  
-  [LinkedIn Profile](https://www.linkedin.com/in/jane-doe)  
-  [GitHub Profile](https://github.com/janedoe)
+- **Negin Babaiha**  
+  [negin.babaiha@scai.fraunhofer.de](mailto:negin.babaiha@scai.fraunhofer.de)  
+  [Google Scholar Profile](https://scholar.google.com/citations?user=OwT3AMQAAAAJ&hl=en&oi=ao)  
 
-- **John Smith**  
-  [john.smith@example.com](mailto:john.smith@example.com)  
-  [LinkedIn Profile](https://www.linkedin.com/in/john-smith)  
-  [GitHub Profile](https://github.com/johnsmith)
 
 Feel free to reach out for any questions or discussions regarding the project.
-
