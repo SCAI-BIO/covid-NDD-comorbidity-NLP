@@ -49,11 +49,4 @@ covid-NDD-comorbidity-NLP/
     ├── test_data_processing.py      # Tests for data processing functions
     └── test_model.py  
 
-## Installation
 
-To get started with the project, clone the repository and install the required dependencies:
-
-```bash
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
-pip install -r requirements.txt
