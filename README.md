@@ -91,7 +91,7 @@ To manually explore the comorbidity graph database:
 
    - **Username**: `neo4j`
 
-   - **Password**: Refer to the credentials provided in the '**src/comorbidity-hypothesis-db.py**'.
+   - **Password**: Refer to the credentials provided in the [**src/comorbidity-hypothesis-db.py**](https://github.com/SCAI-BIO/covid-NDD-comorbidity-NLP/blob/main/src/comorbidity-hypothesis-db.py).
 
 3. **Run Cypher Queries**:
 
