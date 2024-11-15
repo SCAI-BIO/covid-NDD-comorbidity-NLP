@@ -54,16 +54,13 @@ The repository includes the following directories:
   - Perform community detection and analyze relationships.
  
 ### 2. `import-neo4j-all-dbs.ipynb`
-- **Purpose**: Scripts used to upload all databases into Neo4js.
+- **Purpose**: These scripts are designed to upload multiple databases into Neo4j, providing a streamlined workflow for graph-based data integration and analysis. A key requirement for using this script is the bel_json_import package, which is specifically developed to convert BEL (Biological Expression Language) data into the eBEL (enhanced BEL) format. This conversion ensures seamless integration and analysis of complex biological networks within Neo4j and other graph-based platforms.
+
+To successfully use this script, the data extracted from each database must be properly formatted and made accessible before initiating the upload process to Neo4j. Due to privacy concerns associated with the databases, the data is not included in this repository. 
 - **Key Features**:
-- Efficiently import graph data into Neo4j
-- Count and summarize graph nodes and edges, and triples.
+- Efficiently import graph data into Neo4j using a common schema.
 - **Usage**:
-- Open the notebook (import-neo4j-all-dbs.ipynb) in Jupyter Notebook or JupyterLab. Follow the step-by-step instructions to:
-- Connect to your Neo4j database.
-- Query data for analysis.
-- Run community detection algorithms and analyze the results.
-- Use the visualizations provided in the notebook to explore and interpret detected graph structures.
+- Open the notebook (import-neo4j-all-dbs.ipynb) in Jupyter Notebook or JupyterLab. Put the data in the required palces, and run each cell specific to each source to upload files.
 - 
 ## Getting Started
 
