@@ -1,0 +1,62 @@
+Path: COVID-19 → Inflammation → MOG → Encephalomyelitis, Acute Disseminated
+Source: Sherpa
+Mechanism: COVID-19-induced inflammation promotes MOG (myelin oligodendrocyte glycoprotein) antibodies, leading to IgG production and Encephalomyelitis, Acute Disseminated. (Roughly correct (MOG) side has not that strong support)
+Path:COVID-19 → Inflammation → IgG → Immune System Disease
+Source: Sherpa
+Mechanism: COVID-19-induced inflammation raises IgG levels, leading to immune system diseases and possibly neurodegeneration. (Roughly correct (IgG) side has not that strong support)
+Path:COVID-19 → Inflammation → IgG → Immune System Disease → Myelitis → Lymphopenia → MOG → Optic Neuritis
+Source: Sherpa
+Mechanism: COVID-19-driven inflammation increases IgG, causing immune system diseases, myelitis, lymphopenia, and optic neuritis. (Roughly correct (IgG) side has not that strong support)
+Path:COVID-19 → Inflammation → IFNG → IL1B → Taupaties
+Source: Sherpa
+Mechanism: Inflammation increases IFN-γ and IL-18BP, leading to CXCR4 expression and immune responses.
+This come from the evidence, evidence: Tau aggregates, have in turn been shown to induce NLRP3 inflammasome activation, leading to further production of IL-1β by microglia and aggravation of neuroinflammation [109]. The triple extracted by Sherpa says: IL1B increases taupathies, which is not 100 percent correct but the association is stll meaningful. 
+Path:SARS-CoV-2 → Myelitis → Peripheral Nervous System Diseases
+Source: Sherpa
+Mechanism: COVID-19-induced inflammation causes multiple myelitis, which progresses to myelitis and optic neuritis.
+Path:SARS-CoV-2 → IL6→ depression→ TNF→ neurotransmitters→ Encephalitis
+Source: Sherpa
+Mechanism: SARS-CoV-2 triggers an inflammatory response through IL-6 and TNF, leading to neurotransmitter imbalances and depression. This neuroinflammation can escalate to encephalitis, causing acute brain inflammation.
+Path:COVID-19 → Inflammation → IL10 → TREM2→ Hippocampus
+Source: SCAI-DMaps
+Mechanism: COVID-19-induced neuroinflammation elevates IL-6 levels, leading to the activation of microglia in the brain. These activated microglia release pro-inflammatory mediators, which can cause synaptic dysfunction and damage to neurons in the hippocampus, potentially affecting memory and cognitive function.
+Path:COVID-19 → Inflammation → TNF → Neuronal Death → Cognition
+Source: CBM
+Mechanism: TNF-induced inflammation leads to neuronal death and impacts cognition.
+Path:COVID-19 → Inflammation → Astrocyte Activation → Glial Cell Activation → Neuronal Death
+Source: CBM
+Mechanism: COVID-19-induced inflammation activates astrocytes and glial cells, leading to neuronal death.
+Path:COVID-19 → Inflammation → Microglial Activation → Neuronal Injury → TNF
+Source: CBM
+Mechanism: Inflammatory responses activate microglial cells, leading to neuronal injury and TNF production.
+Path:COVID-19 → TLR2 → Cytokines → Microglial Cell Activation → IL1B
+Source: SCAI-DMaps
+Mechanism: TLR2-mediated immune responses trigger cytokine production, microglial activation, and IL-1B release.
+Path:COVID-19 → Inflammation →sleep disorder→GSK3B
+Source: CBM
+Mechanism: COVID-19-driven inflammation raises sleep disorders
+Path:COVID-19 → Neuroinflammation → Alzheimer’s Disease → Cognition → APP
+Source: CBM
+Mechanism: COVID-19-driven neuroinflammation accelerates Alzheimer's disease progression by affecting APP (amyloid precursor protein) and cognition.
+Path:COVID-19 → Neuroinflammation → Parkinson’s Disease → S100B → GFAP
+Source: CBM
+Mechanism: COVID-19-induced neuroinflammation activates S100B and GFAP, potentially contributing to Parkinson’s disease.
+Path:COVID-19 → Immunoregulation → Nitric Oxide Synthase → Neuronal Injury → CRP
+Source: CBM
+Mechanism: COVID-19-induced immune dysregulation elevates nitric oxide synthase levels, causing neuronal injury and increasing CRP levels.
+Path:COVID-19 → Cytokine Production → Inflammation → TNF → Microglial Cell Activation
+Source: SCAI-DMaps
+Mechanism: Cytokine production triggers inflammation, leading to TNF expression and microglial activation.
+Path:COVID-19 → Adaptive Immune Response → Cytokines → APP → Neurodegeneration
+Source: SCAI-DMaps
+Mechanism: The adaptive immune response to COVID-19 leads to cytokine production, impacting APP metabolism and driving neurodegeneration.
+Path:COVID-19 → TLR4 → TLR4-mediated → Brain Inflammation
+Source: PRIMEKG
+Mechanism: TLR4-mediated immune responses upregulated by COVID-19 contribute to brain inflammation and potential neurodegeneration.
+Path:Postencephalitic Parkinson Disease → Seizure → Immunodeficiency→ immunodeficiency 74, COVID-19-related, X-linked
+Source: PRIMEKG
+Mechanism: COVID-19-related immunodeficiency, specifically immunodeficiency 74, X-linked, weakens the immune system, leading to neurological vulnerabilities. This can trigger seizures, which exacerbate brain inflammation and damage, potentially leading to postencephalitic Parkinson disease as a consequence of sustained neuroinflammation and neuronal dysfunction.
+Path:Alzheimer Disease → SOD2 → Dilated Cardiomyopathy → Post-Viral Disorder → Sequela of COVID-19
+Source: PRIMEKG
+Mechanism: Alzheimer's disease progression can be influenced by oxidative stress and mitochondrial dysfunction, where SOD2 (superoxide dismutase 2) plays a crucial role. Impaired SOD2 function exacerbates oxidative damage in both the brain and the heart, contributing to conditions like dilated cardiomyopathy. This cardiac condition may develop into a post-viral disorder, especially following viral infections. In the context of COVID-19, these post-viral effects can manifest as long-term complications, becoming a sequela of COVID-19.
+

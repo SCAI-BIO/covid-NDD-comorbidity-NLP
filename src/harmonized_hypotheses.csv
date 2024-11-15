@@ -1,0 +1,98 @@
+Path ID,Original Entity,Ontology,Harmonized Entity,Match Score
+1,COVID-19,MESHD,COVID-19,100
+1,Inflammation,Disease Ontology,Brain Inflammation,80
+1,MOG,HGNC,MOG,100
+1,"Encephalomyelitis, Acute Disseminated",Disease Ontology,"Encephalomyelitis, Acute Disseminated",100
+2,COVID-19,MESHD,COVID-19,0
+2,Inflammation,Disease Ontology,Brain Inflammation,80
+2,IgG,ChEBI,IgG,100
+2,Immune System Disease,Disease Ontology,Immune System Disease,100
+3,COVID-19,MESHD,COVID-19,100
+3,Inflammation,Disease Ontology,Brain Inflammation,80
+3,IgG,ChEBI,IgG,100
+3,Immune System Disease,Disease Ontology,Immune System Disease,100
+3,Myelitis,Disease Ontology,Myelitis,100
+3,Lymphopenia,Disease Ontology,Lymphopenia,100
+3,MOG,HGNC,MOG,100
+3,Optic Neuritis,Disease Ontology,Optic Neuritis,100
+4,COVID-19,MESHD,COVID-19,100
+4,Inflammation,Disease Ontology,Brain Inflammation,80
+4,IFNG,HGNC,IFNG,100
+4,IL1B,HGNC,IL1B,100
+4,Taupathies,Disease Ontology,Taupathies,100
+5,SARS-CoV-2,Unknown,SARS-CoV-2,0
+5,Myelitis,Disease Ontology,Myelitis,100
+5,Peripheral Nervous System Diseases,Disease Ontology,Peripheral Nervous System Diseases,100
+6,SARS-CoV-2,MESH,SARS-CoV-2,100
+6,IL6,HGNC,IL6,100
+6,Depression,Disease Ontology,Depression,100
+6,TNF,HGNC,TNF,100
+6,Neurotransmitters,CHEBI,Neurotransmitters,100
+6,Encephalitis,Disease Ontology,Encephalitis,100
+7,COVID-19,MESHD,COVID-19,0
+7,Inflammation,Disease Ontology,Brain Inflammation,80
+7,IL10,HGNC,IL10,100
+7,TREM2,HGNC,TREM2,100
+7,Hippocampus,Anatomical_Structure,Hippocampus,0
+8,COVID-19,MESHD,COVID-19,100
+8,Inflammation,Disease Ontology,Brain Inflammation,80
+8,TNF,HGNC,TNF,100
+8,Neuronal Death,Disease Ontology,Neuronal Death,100
+8,Cognition,Disease Ontology,Cognition,100
+9,COVID-19,MESHD,COVID-19,0
+9,Inflammation,Disease Ontology,Brain Inflammation,80
+9,Astrocyte Activation,GO,Astrocyte Activation,0
+9,Glial Cell Activation,GO,Glial Cell Activation,0
+9,Neuronal Death,Disease Ontology,Neuronal Death,100
+10,COVID-19,MESHD,COVID-19,100
+10,Inflammation,Disease Ontology,Brain Inflammation,80
+10,Microglial Activation,GO,Microglial Activation,100
+10,Neuronal Injury,Disease Ontology,Neuronal Injury,100
+10,TNF,HGNC,TNF,100
+11,COVID-19,MESHD,COVID-19,100
+11,TLR2,HGNC,TLR2,100
+11,Cytokines,Signaling_Molecule,Cytokines,0
+11,Microglial Cell Activation,GO,Microglial Cell Activation,0
+11,IL1B,HGNC,IL1B,100
+12,COVID-19,MESHD,COVID-19,0
+12,Inflammation,Disease Ontology,Brain Inflammation,80
+12,Sleep Disorder,Disease Ontology,Sleep Disorder,100
+12,GSK3B,ChEBI,GSK3B,100
+13,COVID-19,MESHD,COVID-19,0
+13,Neuroinflammation,MESH,Neuroinflammation,0
+13,Alzheimer's Disease,Disease Ontology,Alzheimer's Disease,100
+13,Cognition,Disease Ontology,Cognition,100
+13,APP,HGNC,APP,100
+14,COVID-19,MESHD,COVID-19,0
+14,Neuroinflammation,MESH,Neuroinflammation,0
+14,Parkinson's Disease,Disease Ontology,Parkinson's Disease,100
+14,S100B,HGNC,S100B,100
+14,GFAP,HGNC,GFAP,100
+15,COVID-19,MESHD,COVID-19,0
+15,Immunoregulation,GO,Immune System Process,0
+15,Nitric Oxide Synthase,ChEBI,Nitric Oxide Synthase,100
+15,Neuronal Injury,Disease Ontology,Neuronal Injury,100
+15,CRP,HGNC,CRP,0
+16,COVID-19,MESHD,COVID-19,0
+16,Cytokine Production,GO,Cytokine Activity,0
+16,Inflammation,Disease Ontology,Brain Inflammation,80
+16,TNF,HGNC,TNF,100
+16,Microglial Cell Activation,GO,Microglial Cell Activation,0
+17,COVID-19,MESHD,COVID-19,0
+17,Adaptive Immune Response,GO,Adaptive Immune Response,0
+17,Cytokines,Signaling_Molecule,Cytokines,0
+17,APP,HGNC,APP,100
+17,Neurodegeneration,Disease Ontology,Neurodegeneration,100
+18,COVID-19,MESHD,COVID-19,0
+18,TLR4,HGNC,TLR4,0
+18,TLR4-mediated,HGNC,TLR4-mediated,0
+18,Brain Inflammation,Disease Ontology,Brain Inflammation,100
+19,Postencephalitic Parkinson Disease,Disease Ontology,Postencephalitic Parkinson Disease,100
+19,Seizure,Disease Ontology,Seizure,100
+19,Immunodeficiency,MESH,Immunologic Deficiency Syndromes,0
+19,"Immunodeficiency 74, COVID-19-related, X-linked",MESH,Immunologic Deficiency Syndromes,0
+20,Alzheimer's Disease,Disease Ontology,Alzheimer's Disease,100
+20,SOD2,HGNC,SOD2,100
+20,Dilated Cardiomyopathy,Disease Ontology,Dilated Cardiomyopathy,100
+20,Post-Viral Disorder,Disease Ontology,Post-Viral Disorder,100
+20,Sequela of COVID-19,Disease Ontology,Sequela of COVID-19,100
