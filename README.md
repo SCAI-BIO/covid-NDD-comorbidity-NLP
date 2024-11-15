@@ -16,7 +16,7 @@ This project explores the connections between COVID-19 and neurodegenerative dis
 1. **Integrating database information** about COVID-19 and NDDs and storing them in a graph structure.
 2. **Extracting textual data** from scientific literature and using natural language processing pipelines for information extraction and KG construction. 
 3. **Loading all KG** in Neo4j to identify and analyse relationships and pathways between entities such as genes, diseases, and chemicals.
-4. **Construction of a hypothesis database of comorbidity between COVID-19 and NDD** to explore, analyse, and visualise testable comorbidity hypotheses.
+4. **Construction of a hypothesis database for omorbidity between COVID-19 and NDDs** to explore, analyse, and visualise testable comorbidity hypotheses.
 
 ## Data
 The repository includes the following directories:
