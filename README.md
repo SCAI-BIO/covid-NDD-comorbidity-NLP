@@ -47,7 +47,7 @@ The repository includes the following directories:
 - **Usage**:
   Run the script, and the Neo4j Browser will open in your default web browser:
   ```bash
-  python comorbidity-hypothesis-db.py
+  python comorbidity-space-neo4j-upload.py
 
 ## Notebooks
 
