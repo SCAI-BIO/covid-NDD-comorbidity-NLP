@@ -72,21 +72,6 @@ To successfully use this script, the data extracted from each database must be p
 
   ```bash
   pip install neo4j pandas
-### Connecting to Neo4j
-
-To interact with the Neo4j database, you can you the following script:
-
-1. **Using the `comorbidity-hypothesis-db.py` Script**:
-
-   This script automatically opens the Neo4j Browser with prefilled connection details.
-
-   Run the script using the following command:
-
-   ```bash
-   python comorbidity-hypothesis-db.py
-### Using the Jupyter Notebook
-
-To programmatically analyze the data, open and run the `analyze-neo4j.ipynb` Jupyter Notebook.
 
 ## Exploring the Comorbidity Database 
 
