@@ -26,7 +26,7 @@ The repository includes the following directories:
 
 4. **Textual-corpora-for-textmining**: Comprises textual corpora prepared for text mining purposes, facilitating the extraction of meaningful patterns and relationships.
 
-## Scripts
+## src
 
 ### 1. `comorbidity-hypothesis-db.py`
 - **Purpose**: Automatically opens the Neo4j Browser with prefilled credentials to connect to the AuraDB instance for data exploration.
@@ -37,8 +37,11 @@ The repository includes the following directories:
   Run the script, and the Neo4j Browser will open in your default web browser:
   ```bash
   python comorbidity-hypothesis-db.py
-### 2. `Analyzes the knowledge graph in Neo4j to extract insights.`
-- **Purpose**: Automatically opens the Neo4j Browser with prefilled credentials to connect to the AuraDB instance for data exploration.
+
+## notebooks
+
+### 2. `analyze-neo4j.ipynb`
+- **Purpose**: Analyzes the knowledge graph in Neo4j to extract insights.
 - **Key Features**:
   - Counts nodes and edges in the graph.
   - Executes community detection algorithms like Louvain using Neo4j's Graph Data Science (GDS) library.
