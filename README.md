@@ -13,9 +13,10 @@ This repository contains the data, scripts, and analyses used in the research ti
 
 ## Overview
 This project explores the connections between COVID-19 and neurodegenerative diseases by:
-1. **Extracting data** from scientific literature and harmonizing it into a structured format.
-2. **Building a knowledge graph** in Neo4j to identify and analyze relationships between entities such as genes, diseases, and chemicals.
-3. **Running community detection and graph algorithms** to uncover clusters and patterns in the data.
+1. **Integrating database information** about COVID-19 and NDDs and storing them in a graph structure.
+2. **Extracting textual data** from scientific literature and using natural language processing pipelines for information extraction and KG construction. 
+3. **Loading all KG** in Neo4j to identify and analyse relationships and pathways between entities such as genes, diseases, and chemicals.
+4. **Construction of a hypothesis database of comorbidity between COVID-19 and NDD** to explore, analyse, and visualise testable comorbidity hypotheses.
 
 ## Data
 The repository includes the following directories:
