@@ -29,7 +29,7 @@ The repository includes the following directories:
 
 4. **Textual-corpora-for-textmining**: Comprises textual corpora prepared for text mining purposes, facilitating the extraction of meaningful patterns and relationships regarding COVID-19 and NDD.
 
-## Src
+## Sources
 
 ### 1. `comorbidity-hypothesis-db.py`
 - **Purpose**: Automatically opens the Neo4j Browser with prefilled credentials to connect to the AuraDB instance for comorbidity hypothesis exploration.
