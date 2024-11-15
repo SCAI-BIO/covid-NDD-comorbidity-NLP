@@ -77,9 +77,9 @@ To interact with the Neo4j database, you have two options:
 
 To programmatically analyze the data, open and run the `analyze-neo4j.ipynb` Jupyter Notebook.
 
-## Exploring the Knowledge Graph
+## Exploring the Comorbidity Database 
 
-To manually explore the knowledge graph:
+To manually explore the comorbidity graph database:
 
 1. **Open the Neo4j Browser**:
 
