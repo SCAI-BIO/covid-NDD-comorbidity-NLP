@@ -8,6 +8,7 @@ This repository contains the data, scripts, and analyses used in the research ti
 - [Sources](#src)
 - [Notebooks](#notebooks)
 - [Getting Started](#getting-started)
+- [Exploring the COmorbidity Database](#Exploring-the-Comorbidity-Database )
 - [Contact](#contact)
 
 ## Overview
@@ -61,7 +62,7 @@ The repository includes the following directories:
 
   ```bash
   pip install neo4j pandas
-## Connecting to Neo4j
+### Connecting to Neo4j
 
 To interact with the Neo4j database, you have two options:
 
@@ -73,7 +74,7 @@ To interact with the Neo4j database, you have two options:
 
    ```bash
    python comorbidity-hypothesis-db.py
-## Using the Jupyter Notebook
+### Using the Jupyter Notebook
 
 To programmatically analyze the data, open and run the `analyze-neo4j.ipynb` Jupyter Notebook.
 
