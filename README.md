@@ -8,7 +8,7 @@ This repository contains the data, scripts, and analyses used in the research ti
 - [Sources](#src)
 - [Notebooks](#notebooks)
 - [Getting Started](#getting-started)
-- [Exploring the COmorbidity Database](#Exploring-the-Comorbidity-Database )
+- [Exploring the Comorbidity Database](#Exploring-the-Comorbidity-Database )
 - [Contact](#contact)
 
 ## Overview
