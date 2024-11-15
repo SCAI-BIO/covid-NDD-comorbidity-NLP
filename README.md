@@ -1,12 +1,14 @@
 # Exploring the Current State of Knowledge on the Link Between COVID-19 and Neurodegeneration
 
-This repository contains the data, scripts, and analyses used in the research titled **"Exploring the Current State of Knowledge on the Link Between COVID-19 and Neurodegeneration using Natural Language Processing and Knowledge Graphs"**. The project leverages Neo4j AuraDB for graph-based analysis and integrates natural language processing to explore relationships between COVID-19 and neurodegenerative diseases.
+This repository contains the data, scripts, and analyses used in the research titled **"Understanding the Co-Morbidity between COVID-19 and Neurodegenerative Diseases at Mechanism-Level: Comprehensive Analysis Integrating Databases and Text Mining"**. The project leverages Neo4j AuraDB for graph-based analysis and integrates natural language processing to explore relationships between COVID-19 and neurodegenerative diseases.
 
 ## Table of Contents
 - [Overview](#overview)
 - [Data](#data)
-- [Scripts](#scripts)
+- [Sources](#src)
+- [Notebooks](#notebooks)
 - [Getting Started](#getting-started)
+- [Exploring the Comorbidity Database](#Exploring-the-Comorbidity-Database )
 - [Contact](#contact)
 
 ## Overview
@@ -24,12 +26,12 @@ The repository includes the following directories:
 
 3. **Sherpa-results**: Houses outputs from Sherpa, a tool designed to assist in the curation of biomedical literature by providing automated annotations and insights.
 
-4. **Textual-corpora-for-textmining**: Comprises textual corpora prepared for text mining purposes, facilitating the extraction of meaningful patterns and relationships.
+4. **Textual-corpora-for-textmining**: Comprises textual corpora prepared for text mining purposes, facilitating the extraction of meaningful patterns and relationships regarding COVID-19 and NDD.
 
-## Scripts
+## Src
 
 ### 1. `comorbidity-hypothesis-db.py`
-- **Purpose**: Automatically opens the Neo4j Browser with prefilled credentials to connect to the AuraDB instance for data exploration.
+- **Purpose**: Automatically opens the Neo4j Browser with prefilled credentials to connect to the AuraDB instance for comorbidity hypothesis exploration.
 - **Key Features**:
   - Simplifies connection to Neo4j by generating a pre-configured URL.
   - Useful for direct interaction with the knowledge graph.
@@ -37,8 +39,11 @@ The repository includes the following directories:
   Run the script, and the Neo4j Browser will open in your default web browser:
   ```bash
   python comorbidity-hypothesis-db.py
-### 2. `Analyzes the knowledge graph in Neo4j to extract insights.`
-- **Purpose**: Automatically opens the Neo4j Browser with prefilled credentials to connect to the AuraDB instance for data exploration.
+
+## Notebooks
+
+### 1. `analyze-neo4j.ipynb`
+- **Purpose**: Analyzes the knowledge graph in Neo4j to extract insights.
 - **Key Features**:
   - Counts nodes and edges in the graph.
   - Executes community detection algorithms like Louvain using Neo4j's Graph Data Science (GDS) library.
@@ -46,7 +51,20 @@ The repository includes the following directories:
 - **Usage**:
   Open the Jupyter Notebook and follow the instructions to:
   - Query the Neo4j database.
-  - Perform community detection and analyze relationships. 
+  - Perform community detection and analyze relationships.
+ 
+### 2. `import-neo4j-all-dbs.ipynb`
+- **Purpose**: Scripts used to upload all databases into Neo4js.
+- **Key Features**:
+- Efficiently import graph data into Neo4j
+- Count and summarize graph nodes and edges, and triples.
+- **Usage**:
+- Open the notebook (import-neo4j-all-dbs.ipynb) in Jupyter Notebook or JupyterLab. Follow the step-by-step instructions to:
+- Connect to your Neo4j database.
+- Query data for analysis.
+- Run community detection algorithms and analyze the results.
+- Use the visualizations provided in the notebook to explore and interpret detected graph structures.
+- 
 ## Getting Started
 
 ### Prerequisites
@@ -57,9 +75,9 @@ The repository includes the following directories:
 
   ```bash
   pip install neo4j pandas
-## Connecting to Neo4j
+### Connecting to Neo4j
 
-To interact with the Neo4j database, you have two options:
+To interact with the Neo4j database, you can you the following script:
 
 1. **Using the `comorbidity-hypothesis-db.py` Script**:
 
@@ -69,13 +87,13 @@ To interact with the Neo4j database, you have two options:
 
    ```bash
    python comorbidity-hypothesis-db.py
-## Using the Jupyter Notebook
+### Using the Jupyter Notebook
 
 To programmatically analyze the data, open and run the `analyze-neo4j.ipynb` Jupyter Notebook.
 
-## Exploring the Knowledge Graph
+## Exploring the Comorbidity Database 
 
-To manually explore the knowledge graph:
+To manually explore the comorbidity graph database:
 
 1. **Open the Neo4j Browser**:
 
@@ -87,7 +105,7 @@ To manually explore the knowledge graph:
 
    - **Username**: `neo4j`
 
-   - **Password**: Refer to the credentials provided in the scripts or your configuration.
+   - **Password**: Refer to the credentials provided in the [**src/comorbidity-hypothesis-db.py**](https://github.com/SCAI-BIO/covid-NDD-comorbidity-NLP/blob/main/src/comorbidity-hypothesis-db.py).
 
 3. **Run Cypher Queries**:
 
