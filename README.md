@@ -43,7 +43,7 @@ The repository includes the following directories:
 ## Notebooks
 
 ### 1. `analyze-neo4j.ipynb`
-- **Purpose**: Analyzes the knowledge graph in Neo4j to extract insights.
+- **Purpose**: Analyzes the knowledge graph loaded to  Neo4j to extract insights.
 - **Key Features**:
   - Counts nodes and edges in the graph.
   - Executes community detection algorithms like Louvain using Neo4j's Graph Data Science (GDS) library.
