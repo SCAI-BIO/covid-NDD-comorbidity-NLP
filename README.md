@@ -1,6 +1,6 @@
 # Exploring the Current State of Knowledge on the Link Between COVID-19 and Neurodegeneration
 
-This repository contains the data, scripts, and analyses used in the research titled **"Understanding the Co-Morbidity between COVID-19 and Neurodegenerative Diseases at Mechanism-Level: Comprehensive Analysis Integrating Databases and Text Mining"**. The project leverages Neo4j AuraDB for graph-based analysis and integrates natural language processing to explore relationships between COVID-19 and neurodegenerative diseases.
+This repository contains the data, scripts, and analyses used in the research titled **"Understanding the Co-Morbidity between COVID-19 and Neurodegenerative Diseases at Mechanism-Level: Comprehensive Analysis Integrating Databases and Text Mining"**. The project leverages Neo4j AuraDB for graph-based analysis and integrates natural language processing to explore relationships between COVID-19 and neurodegenerative diseases (NDDs).
 
 ## Table of Contents
 - [Overview](#overview)
@@ -73,7 +73,7 @@ To successfully use this script, the data extracted from each database must be p
   ```bash
   pip install neo4j pandas
 
-## Exploring the Comorbidity Database 
+## Exploring the Covid-NDD Comorbidity Database 
 
 To manually explore the comorbidity graph database:
 
