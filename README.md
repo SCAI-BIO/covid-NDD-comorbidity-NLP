@@ -91,7 +91,7 @@ To manually explore the comorbidity graph database:
 
    - **Username**: `neo4j`
 
-   - **Password**: Refer to the credentials provided in the scripts or your configuration.
+   - **Password**: Refer to the credentials provided in the src/comorbidity-hypothesis-db.py or your configuration.
 
 3. **Run Cypher Queries**:
 
