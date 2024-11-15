@@ -5,7 +5,8 @@ This repository contains the data, scripts, and analyses used in the research ti
 ## Table of Contents
 - [Overview](#overview)
 - [Data](#data)
-- [Scripts](#scripts)
+- [Sources](#src)
+- [Notebooks](#notebooks)
 - [Getting Started](#getting-started)
 - [Contact](#contact)
 
@@ -15,7 +16,7 @@ This project explores the connections between COVID-19 and neurodegenerative dis
 2. **Building a knowledge graph** in Neo4j to identify and analyze relationships between entities such as genes, diseases, and chemicals.
 3. **Running community detection and graph algorithms** to uncover clusters and patterns in the data.
 
-## Data
+## data
 The repository includes the following directories:
 
 1. **Expert-curated-publications**: Contains manually curated publications relevant to the study, ensuring high-quality and accurate information.
