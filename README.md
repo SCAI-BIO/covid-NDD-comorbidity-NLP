@@ -61,7 +61,7 @@ The repository includes the following directories:
 - **Usage**:
   Open the Jupyter Notebook and follow the instructions to:
   - Query the Neo4j database.
-  - Perform community detection and analyze relationships.
+  - Get general statistics about nodes, triple and pathways, and analyze them.
  
 ### 2. `import-neo4j-all-dbs.ipynb`
 - **Purpose**: These scripts are designed to upload multiple databases into Neo4j, providing a streamlined workflow for graph-based data integration and analysis. A key requirement for using this script is the bel_json_import package, which is specifically developed to convert BEL (Biological Expression Language) data into the eBEL (enhanced BEL) format. This conversion ensures seamless integration and analysis of complex biological networks within Neo4j and other graph-based platforms.
