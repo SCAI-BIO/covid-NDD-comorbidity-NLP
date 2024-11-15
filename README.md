@@ -40,6 +40,15 @@ The repository includes the following directories:
   ```bash
   python comorbidity-hypothesis-db.py
 
+### 2. `comorbidity-space-neo4j-upload.py`
+- **Purpose**: Uplaoding the comorbidity hypothesis paths to the AuraDB instance for comorbidity hypothesis exploration. The candidate curated paths are stored in a text file, in **'src/comorbidity_paths.txt'**. The entities from this path list are harmonized based on various namespace and ontologies such as MESH, ChEBI or Disease Ontology. List of harmonized entities are added in **'src/harmonized_hypotheses.csv'**.
+- **Key Features**:
+  - Simplifies uploading the hypothesis comorbidity candidates.
+- **Usage**:
+  Run the script, and the Neo4j Browser will open in your default web browser:
+  ```bash
+  python comorbidity-hypothesis-db.py
+
 ## Notebooks
 
 ### 1. `analyze-neo4j.ipynb`
