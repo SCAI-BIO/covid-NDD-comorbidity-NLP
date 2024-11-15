@@ -17,7 +17,7 @@ This project explores the connections between COVID-19 and neurodegenerative dis
 2. **Building a knowledge graph** in Neo4j to identify and analyze relationships between entities such as genes, diseases, and chemicals.
 3. **Running community detection and graph algorithms** to uncover clusters and patterns in the data.
 
-## data
+## Data
 The repository includes the following directories:
 
 1. **Expert-curated-publications**: Contains manually curated publications relevant to the study, ensuring high-quality and accurate information.
@@ -26,12 +26,12 @@ The repository includes the following directories:
 
 3. **Sherpa-results**: Houses outputs from Sherpa, a tool designed to assist in the curation of biomedical literature by providing automated annotations and insights.
 
-4. **Textual-corpora-for-textmining**: Comprises textual corpora prepared for text mining purposes, facilitating the extraction of meaningful patterns and relationships.
+4. **Textual-corpora-for-textmining**: Comprises textual corpora prepared for text mining purposes, facilitating the extraction of meaningful patterns and relationships regarding COVID-19 and NDD.
 
-## src
+## Src
 
 ### 1. `comorbidity-hypothesis-db.py`
-- **Purpose**: Automatically opens the Neo4j Browser with prefilled credentials to connect to the AuraDB instance for data exploration.
+- **Purpose**: Automatically opens the Neo4j Browser with prefilled credentials to connect to the AuraDB instance for comorbidity hypothesis exploration.
 - **Key Features**:
   - Simplifies connection to Neo4j by generating a pre-configured URL.
   - Useful for direct interaction with the knowledge graph.
@@ -40,9 +40,9 @@ The repository includes the following directories:
   ```bash
   python comorbidity-hypothesis-db.py
 
-## notebooks
+## Notebooks
 
-### 2. `analyze-neo4j.ipynb`
+### 1. `analyze-neo4j.ipynb`
 - **Purpose**: Analyzes the knowledge graph in Neo4j to extract insights.
 - **Key Features**:
   - Counts nodes and edges in the graph.
@@ -51,7 +51,20 @@ The repository includes the following directories:
 - **Usage**:
   Open the Jupyter Notebook and follow the instructions to:
   - Query the Neo4j database.
-  - Perform community detection and analyze relationships. 
+  - Perform community detection and analyze relationships.
+ 
+### 2. `import-neo4j-all-dbs.ipynb`
+- **Purpose**: Scripts used to upload all databases into Neo4js.
+- **Key Features**:
+- Efficiently import graph data into Neo4j
+- Count and summarize graph nodes and edges, and triples.
+- **Usage**:
+- Open the notebook (import-neo4j-all-dbs.ipynb) in Jupyter Notebook or JupyterLab. Follow the step-by-step instructions to:
+- Connect to your Neo4j database.
+- Query data for analysis.
+- Run community detection algorithms and analyze the results.
+- Use the visualizations provided in the notebook to explore and interpret detected graph structures.
+- 
 ## Getting Started
 
 ### Prerequisites
@@ -64,7 +77,7 @@ The repository includes the following directories:
   pip install neo4j pandas
 ### Connecting to Neo4j
 
-To interact with the Neo4j database, you have two options:
+To interact with the Neo4j database, you can you the following script:
 
 1. **Using the `comorbidity-hypothesis-db.py` Script**:
 
