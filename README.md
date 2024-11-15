@@ -1,6 +1,6 @@
 # Exploring the Current State of Knowledge on the Link Between COVID-19 and Neurodegeneration
 
-This repository contains the data, scripts, and analyses used in the research titled **"Exploring the Current State of Knowledge on the Link Between COVID-19 and Neurodegeneration using Natural Language Processing and Knowledge Graphs"**. The project leverages Neo4j AuraDB for graph-based analysis and integrates natural language processing to explore relationships between COVID-19 and neurodegenerative diseases.
+This repository contains the data, scripts, and analyses used in the research titled **"Understanding the Co-Morbidity between COVID-19 and Neurodegenerative Diseases at Mechanism-Level: Comprehensive Analysis Integrating Databases and Text Mining"**. The project leverages Neo4j AuraDB for graph-based analysis and integrates natural language processing to explore relationships between COVID-19 and neurodegenerative diseases.
 
 ## Table of Contents
 - [Overview](#overview)
