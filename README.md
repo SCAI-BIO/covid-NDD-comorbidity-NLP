@@ -1,6 +1,7 @@
 # Exploring the Current State of Knowledge on the Link Between COVID-19 and Neurodegeneration
 
-This repository contains the data, scripts, and analyses used in the research titled **"Understanding the Co-Morbidity between COVID-19 and Neurodegenerative Diseases at Mechanism-Level: Comprehensive Analysis Integrating Databases and Text Mining"**. The project leverages Neo4j AuraDB for graph-based analysis and integrates natural language processing to explore relationships between COVID-19 and neurodegenerative diseases (NDDs).
+This repository contains the data, scripts, and analyses used in the research titled **"Understanding the Co-Morbidity between COVID-19 and Neurodegenerative Diseases at Mechanism-Level: Comprehensive Analysis Integrating Databases and Text Mining"**. The project leverages Neo4j paltform for graph-based analysis and integrates natural language processing to explore relationships between COVID-19 and neurodegenerative diseases (NDDs).
+![Logo](images/workflow.png)
 
 ## Table of Contents
 - [Overview](#overview)
@@ -8,14 +9,15 @@ This repository contains the data, scripts, and analyses used in the research ti
 - [Sources](#src)
 - [Notebooks](#notebooks)
 - [Getting Started](#getting-started)
-- [Exploring the Covid-NDD Comorbidity Database](#Exploring-the-Comorbidity-Database )
+- [Exploring the Covid-NDD Comorbidity Database](#Exploring-the-Covid-NDD-Comorbidity-Database)
 - [Contact](#contact)
 
 ## Overview
 This project explores the connections between COVID-19 and neurodegenerative diseases by:
-1. **Extracting data** from scientific literature and harmonizing it into a structured format.
-2. **Building a knowledge graph** in Neo4j to identify and analyze relationships between entities such as genes, diseases, and chemicals.
-3. **Running community detection and graph algorithms** to uncover clusters and patterns in the data.
+1. **Integrating database information** about COVID-19 and NDDs and storing them in a graph structure.
+2. **Extracting textual data** from scientific literature and using natural language processing pipelines for information extraction and KG construction. 
+3. **Loading all KG** in Neo4j to identify and analyse relationships and pathways between entities such as genes, diseases, and chemicals.
+4. **Construction of a hypothesis database for omorbidity between COVID-19 and NDDs** to explore, analyse, and visualise testable comorbidity hypotheses.
 
 ## Data
 The repository includes the following directories:
@@ -28,7 +30,7 @@ The repository includes the following directories:
 
 4. **Textual-corpora-for-textmining**: Comprises textual corpora prepared for text mining purposes, facilitating the extraction of meaningful patterns and relationships regarding COVID-19 and NDD.
 
-## Src
+## Sources
 
 ### 1. `comorbidity-hypothesis-db.py`
 - **Purpose**: Automatically opens the Neo4j Browser with prefilled credentials to connect to the AuraDB instance for comorbidity hypothesis exploration.
@@ -60,7 +62,7 @@ The repository includes the following directories:
 - **Usage**:
   Open the Jupyter Notebook and follow the instructions to:
   - Query the Neo4j database.
-  - Perform community detection and analyze relationships.
+  - Get general statistics about nodes, triple and pathways, and analyze them.
  
 ### 2. `import-neo4j-all-dbs.ipynb`
 - **Purpose**: These scripts are designed to upload multiple databases into Neo4j, providing a streamlined workflow for graph-based data integration and analysis. A key requirement for using this script is the bel_json_import package, which is specifically developed to convert BEL (Biological Expression Language) data into the eBEL (enhanced BEL) format. This conversion ensures seamless integration and analysis of complex biological networks within Neo4j and other graph-based platforms.
