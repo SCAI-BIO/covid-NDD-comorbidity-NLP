@@ -6,7 +6,7 @@ This repository contains the data, scripts, and analyses used in the research ti
 ## Table of Contents
 - [Overview](#overview)
 - [Data](#data)
-- [Sources](#src)
+- [Sources](#sources)
 - [Notebooks](#notebooks)
 - [Getting Started](#getting-started)
 - [Exploring the Covid-NDD Comorbidity Database](#Exploring-the-Covid-NDD-Comorbidity-Database)
