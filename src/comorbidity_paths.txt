@@ -7,7 +7,7 @@ Mechanism: COVID-19-induced inflammation raises IgG levels, leading to immune sy
 Path:COVID-19 → Inflammation → IgG → Immune System Disease → Myelitis → Lymphopenia → MOG → Optic Neuritis
 Source: Sherpa
 Mechanism: COVID-19-driven inflammation increases IgG, causing immune system diseases, myelitis, lymphopenia, and optic neuritis. (Roughly correct (IgG) side has not that strong support)
-Path:COVID-19 → Inflammation → IFNG → IL1B → Taupaties
+Path:COVID-19 → Inflammation → IFNG → IL1B → Tauopathies
 Source: Sherpa
 Mechanism: Inflammation increases IFN-γ and IL-18BP, leading to CXCR4 expression and immune responses.
 This come from the evidence, evidence: Tau aggregates, have in turn been shown to induce NLRP3 inflammasome activation, leading to further production of IL-1β by microglia and aggravation of neuroinflammation [109]. The triple extracted by Sherpa says: IL1B increases taupathies, which is not 100 percent correct but the association is stll meaningful. 
@@ -35,9 +35,6 @@ Mechanism: TLR2-mediated immune responses trigger cytokine production, microglia
 Path:COVID-19 → Inflammation →sleep disorder→GSK3B
 Source: CBM
 Mechanism: COVID-19-driven inflammation raises sleep disorders
-Path:COVID-19 → Neuroinflammation → Alzheimer’s Disease → Cognition → APP
-Source: CBM
-Mechanism: COVID-19-driven neuroinflammation accelerates Alzheimer's disease progression by affecting APP (amyloid precursor protein) and cognition.
 Path:COVID-19 → Neuroinflammation → Parkinson’s Disease → S100B → GFAP
 Source: CBM
 Mechanism: COVID-19-induced neuroinflammation activates S100B and GFAP, potentially contributing to Parkinson’s disease.
@@ -59,4 +56,51 @@ Mechanism: COVID-19-related immunodeficiency, specifically immunodeficiency 74, 
 Path:Alzheimer Disease → SOD2 → Dilated Cardiomyopathy → Post-Viral Disorder → Sequela of COVID-19
 Source: PRIMEKG
 Mechanism: Alzheimer's disease progression can be influenced by oxidative stress and mitochondrial dysfunction, where SOD2 (superoxide dismutase 2) plays a crucial role. Impaired SOD2 function exacerbates oxidative damage in both the brain and the heart, contributing to conditions like dilated cardiomyopathy. This cardiac condition may develop into a post-viral disorder, especially following viral infections. In the context of COVID-19, these post-viral effects can manifest as long-term complications, becoming a sequela of COVID-19.
-
+Path: COVID-19 → inflammation → IL1B 
+Source: CBM
+Mechanism: COVID-19 infection triggers an immune response that leads to significant inflammation, often marked by a "cytokine storm" in severe cases. This begins with the activation of immune cells like macrophages and dendritic cells, releasing pro-inflammatory cytokines, including IL-1β (Interleukin-1 beta). IL-1β amplifies the inflammatory response, promoting the production of IL-6 (Interleukin-6), a cytokine associated with systemic inflammation and neuroinflammatory processes. Elevated IL-6 levels can disrupt the blood-brain barrier and induce neuroinflammation, which impairs synaptic function and neuronal health. Prolonged neuroinflammation, combined with systemic effects, contributes to cognitive decline, as seen in many post-COVID-19 patients.
+Path: IL1B → Tauopathies
+Source: Sherpa
+Mechanism:The connection between IL1B (Interleukin-1 beta) and tauopathies (neurodegenerative diseases characterized by the aggregation of hyperphosphorylated tau protein) involves several molecular and cellular mechanisms. 
+Path: Post-Acute COVID-19 Syndrome→Encephalomyelitis, Acute Disseminated→Headache→Epilepsy→Covid-19
+Source: Sherpa
+Mechanism: Post-Acute COVID-19 Syndrome (PACS) triggers systemic and neuroinflammation, which can lead to Acute Disseminated Encephalomyelitis (ADEM), a demyelinating condition marked by widespread inflammation in the brain and spinal cord. ADEM often causes severe headaches due to neural and meningeal inflammation. Persistent inflammation and neural damage may lower the seizure threshold, increasing the risk of epilepsy. In turn, epilepsy episodes, particularly in PACS, can be linked to neurological dysfunction associated with prior SARS-CoV-2 infection, completing the feedback loop to COVID-19’s neuroinflammatory effects
+Path: Brain Diseases → Tremor→ Muscle Spasticity
+Source: Sherpa
+Mechanism: Brain disease causes TMS.
+Path: COVID-19 → Muscle Spasticity
+Source: SCAI-DMaps
+Mechanism: Covid causes muscle spasticity
+Path: neuron death →inflammatory response →microglial cell activation involved in immune response
+Source: SCAI-DMaps
+Mechanism: neuron death causes inflammation which is related to microglial cell activity
+Path:Ikbkg → Pericytes
+Source: CBM
+Mechanism: ""
+Path: Ikbkg → microglial cell activation
+Source: CBM
+Mechanism: ""
+Path: COVID-19 → microglial cell activation
+Source: CBM
+Mechanism: ""
+Path: iL10 → COVID-19
+Source: SCAI-DMaps
+Mechanism:""
+Path: Parkinson →  neuroinflammation →  Blood-Brain Barrier
+Source: CBM
+Mechanism: ""
+Path:COVID-19 → Neuroinflammation
+Source: SCAI
+Mechanism: COVID-19-driven neuroinflammation accelerates Alzheimer's disease progression by affecting APP (amyloid precursor protein) and cognition.
+Path:  Neuroinflammation → Cognition
+Source: CBM
+Mechanism: ""
+Path: Cognition → APP
+Source: SCAI
+Mechanism: ""
+Path: Covid19 → inflamamtory response
+Source: CBM
+Mechanism: ""
+Path: neuroinflamamtion →  inflamamtory response
+Source: CBM
+Mechanism: ""
