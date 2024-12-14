@@ -66,9 +66,9 @@ The repository includes the following directories:
 
 A comprehensive data integration pipeline for analyzing relationships between COVID-19 and neurodegenerative diseases (NDDs). This pipeline processes and uploads three types of biomedical data to Neo4j:
 
-1. Hypothesis Data
-2. Pathway Data
-3. GWAS Data
+1. Triples hypothesis (filtered triples from all dbs)
+2. Pathway hypothesis (filtered pathways)
+3. GWAS Data (shared variants)
 
 The project leverages Neo4j for graph-based analysis and integrates various data sources to explore disease relationships.
 
@@ -93,9 +93,22 @@ Create `config.json`:
 
 3. **Run Pipeline**
 ```python
-from hypothesis-graph-database-upload import DataPipelineRunner
-runner = DataPipelineRunner()
-runner.run()
+from your_script_name import DataPipelineRunner, Neo4jConfig
+
+# Configure Neo4j connection
+config = Neo4jConfig(
+    uri="your_neo4j_uri",
+    user="your_username",
+    password="your_password"
+)
+
+# Run pipeline
+runner = DataPipelineRunner(config)
+runner.run(
+    hypothesis_file="path/to/your/hypothesis.csv",
+    pathway_file="path/to/your/pathway.csv",
+    gwas_file="path/to/your/gwas.xlsx"
+)
 ```
 
 ## Getting Started
