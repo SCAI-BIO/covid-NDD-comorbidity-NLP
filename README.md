@@ -105,9 +105,9 @@ config = Neo4jConfig(
 # Run pipeline
 runner = DataPipelineRunner(config)
 runner.run(
-    hypothesis_file="path/to/your/hypothesis.csv",
-    pathway_file="path/to/your/pathway.csv",
-    gwas_file="path/to/your/gwas.xlsx"
+    triple_file="path/to/cleaned_all_db_association.csv",
+    pathway_file="path/to/your/hypothesis_pmid_evidences.csv",
+    gwas_file="path/to/your/shared-variants.xlsx"
 )
 ```
 
