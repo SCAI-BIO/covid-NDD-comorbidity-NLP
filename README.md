@@ -72,7 +72,45 @@ To successfully use this script, the data extracted from each database must be p
 - Efficiently import graph data into Neo4j using a common schema.
 - **Usage**:
 - Open the notebook (import-neo4j-all-dbs.ipynb) in Jupyter Notebook or JupyterLab. Put the data in the required palces, and run each cell specific to each source to upload files.
-- 
+
+### 3. 'hypothesis-graph-database-upload.py'
+
+- **Purpose**:
+
+A comprehensive data integration pipeline for analyzing relationships between COVID-19 and neurodegenerative diseases (NDDs). This pipeline processes and uploads three types of biomedical data to Neo4j:
+
+1. Hypothesis Data
+2. Pathway Data
+3. GWAS Data
+
+The project leverages Neo4j for graph-based analysis and integrates various data sources to explore disease relationships.
+
+## Quick Start
+
+1. **Install Dependencies**
+```bash
+pip install pandas neo4j requests rapidfuzz fuzzywuzzy python-Levenshtein
+```
+
+2. **Configure Neo4j Connection**
+Create `config.json`:
+```json
+{
+    "neo4j": {
+        "uri": "neo4j+s://09f8d4e9.databases.neo4j.io",
+        "user": "neo4j",
+        "password": "your-password"
+    }
+}
+```
+
+3. **Run Pipeline**
+```python
+from biomedical_pipeline import DataPipelineRunner
+runner = DataPipelineRunner()
+runner.run()
+```
+
 ## Getting Started
 
 ### Prerequisites
