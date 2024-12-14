@@ -101,14 +101,14 @@ class DataPipelineRunner:
         self.pipeline = BiomedicalDataPipeline(self.config)
         
     def run(self, 
-            hypothesis_file: str = "hypothesis_pmid_evidences.csv",
+            triple_file: str = "hypothesis_pmid_evidences.csv",
             pathway_file: str = "all-dbs/cleaned_all_db_association.csv",
             gwas_file: str = "GWAS/shared-variants.xlsx") -> None:
         """
         Run the complete pipeline.
         
         Args:
-            hypothesis_file: Path to hypothesis data file
+            triple_file: Path to hypothesis data file
             pathway_file: Path to pathway data file
             gwas_file: Path to GWAS data file
         """
@@ -120,12 +120,12 @@ class DataPipelineRunner:
         }
         
         # Process hypothesis data
-        if os.path.exists(hypothesis_file):
+        if os.path.exists(triple_file):
             status["hypothesis"] = self.pipeline.process_hypothesis_data(
-                hypothesis_file
+                triple_file
             )
         else:
-            logging.warning(f"Hypothesis file not found: {hypothesis_file}")
+            logging.warning(f"Hypothesis file not found: {triple_file}")
             
         # Process pathway data
         if os.path.exists(pathway_file):
@@ -170,7 +170,7 @@ def main():
     
     # Alternatively, specify custom file paths:
     # runner.run(
-    #     hypothesis_file="custom/path/hypothesis.csv",
+    #     triple_file="custom/path/hypothesis.csv",
     #     pathway_file="custom/path/pathway.csv",
     #     gwas_file="custom/path/gwas.xlsx"
     # )
