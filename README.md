@@ -93,7 +93,7 @@ Create `config.json`:
 
 3. **Run Pipeline**
 ```python
-from your_script_name import DataPipelineRunner, Neo4jConfig
+from hypothesis-graph-database-upload import DataPipelineRunner, Neo4jConfig
 
 # Configure Neo4j connection
 config = Neo4jConfig(
