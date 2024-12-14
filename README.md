@@ -64,16 +64,43 @@ The repository includes the following directories:
   - Query the Neo4j database.
   - Get general statistics about nodes, triple and pathways, and analyze them.
  
-### 2. `import-neo4j-all-dbs.ipynb`
-- **Purpose**: These scripts are designed to upload multiple databases into Neo4j, providing a streamlined workflow for graph-based data integration and analysis. A key requirement for using this script is the bel_json_import package, which is specifically developed to convert BEL (Biological Expression Language) data into the eBEL (enhanced BEL) format. This conversion ensures seamless integration and analysis of complex biological networks within Neo4j and other graph-based platforms.
+## Notebooks
 
-To successfully use this script, the data extracted from each database must be properly formatted and made accessible before initiating the upload process to Neo4j. Due to privacy concerns associated with the databases, the data is not included in this repository. 
+### 1. `analyze-neo4j.ipynb`
+- **Purpose**: Analyzes the knowledge graph loaded to Neo4j to extract insights.
 - **Key Features**:
-- Efficiently import graph data into Neo4j using a common schema.
+  - Counts nodes and edges in the graph.
+  - Executes community detection algorithms like Louvain using Neo4j's Graph Data Science (GDS) library.
+  - Retrieves and visualizes properties of detected clusters
 - **Usage**:
-- Open the notebook (import-neo4j-all-dbs.ipynb) in Jupyter Notebook or JupyterLab. Put the data in the required palces, and run each cell specific to each source to upload files.
+  Open the Jupyter Notebook and follow the instructions to:
+  - Query the Neo4j database.
+  - Get general statistics about nodes, triple and pathways, and analyze them.
+ 
+### 2. `import-neo4j-all-dbs.ipynb`
+- **Purpose**: These scripts are designed to upload multiple databases into Neo4j, providing a streamlined workflow for graph-based data integration and analysis.
+- **Prerequisites**: 
+  - bel_json_import package for BEL data conversion to eBEL format
+  - Properly formatted database extracts
+- **Key Features**:
+  - Efficiently import graph data into Neo4j using a common schema
+  - Seamless integration of complex biological networks
+  - Privacy-aware data handling
+- **Usage**:
+  - Open the notebook in Jupyter Notebook or JupyterLab
+  - Place data in required locations
+  - Run cells specific to each source
 
-### 3. 'hypothesis-graph-database-upload.py'
+### 3. `hypothesis-graph-database-upload.ipynb`
+- **Purpose**: Manages the upload of hypothesis-based graph data to Neo4j.
+- **Key Features**:
+  - Dedicated notebook for hypothesis data integration
+  - Structured data validation
+  - Automated graph relationship creation
+- **Usage**:
+  - Open in Jupyter environment
+  - Configure data paths
+  - Execute cells sequentially
 
 - **Purpose**:
 
