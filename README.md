@@ -50,48 +50,8 @@ The repository includes the following directories:
   Run the script, and the Neo4j Browser will open in your default web browser:
   ```bash
   python comorbidity-space-neo4j-upload.py
-
-## Notebooks
-
-### 1. `analyze-neo4j.ipynb`
-- **Purpose**: Analyzes the knowledge graph loaded to  Neo4j to extract insights.
-- **Key Features**:
-  - Counts nodes and edges in the graph.
-  - Executes community detection algorithms like Louvain using Neo4j's Graph Data Science (GDS) library.
-  - Retrieves and visualizes properties of detected clusters
-- **Usage**:
-  Open the Jupyter Notebook and follow the instructions to:
-  - Query the Neo4j database.
-  - Get general statistics about nodes, triple and pathways, and analyze them.
- 
-## Notebooks
-
-### 1. `analyze-neo4j.ipynb`
-- **Purpose**: Analyzes the knowledge graph loaded to Neo4j to extract insights.
-- **Key Features**:
-  - Counts nodes and edges in the graph.
-  - Executes community detection algorithms like Louvain using Neo4j's Graph Data Science (GDS) library.
-  - Retrieves and visualizes properties of detected clusters
-- **Usage**:
-  Open the Jupyter Notebook and follow the instructions to:
-  - Query the Neo4j database.
-  - Get general statistics about nodes, triple and pathways, and analyze them.
- 
-### 2. `import-neo4j-all-dbs.ipynb`
-- **Purpose**: These scripts are designed to upload multiple databases into Neo4j, providing a streamlined workflow for graph-based data integration and analysis.
-- **Prerequisites**: 
-  - bel_json_import package for BEL data conversion to eBEL format
-  - Properly formatted database extracts
-- **Key Features**:
-  - Efficiently import graph data into Neo4j using a common schema
-  - Seamless integration of complex biological networks
-  - Privacy-aware data handling
-- **Usage**:
-  - Open the notebook in Jupyter Notebook or JupyterLab
-  - Place data in required locations
-  - Run cells specific to each source
-
-### 3. `hypothesis-graph-database-upload.ipynb`
+  
+### 3. `hypothesis-graph-database-upload.py`
 - **Purpose**: Manages the upload of hypothesis-based graph data to Neo4j.
 - **Key Features**:
   - Dedicated notebook for hypothesis data integration
@@ -133,7 +93,7 @@ Create `config.json`:
 
 3. **Run Pipeline**
 ```python
-from biomedical_pipeline import DataPipelineRunner
+from hypothesis-graph-database-upload import DataPipelineRunner
 runner = DataPipelineRunner()
 runner.run()
 ```
@@ -148,6 +108,34 @@ runner.run()
 
   ```bash
   pip install neo4j pandas
+ 
+## Notebooks
+
+### 1. `analyze-neo4j.ipynb`
+- **Purpose**: Analyzes the knowledge graph loaded to Neo4j to extract insights.
+- **Key Features**:
+  - Counts nodes and edges in the graph.
+  - Executes community detection algorithms like Louvain using Neo4j's Graph Data Science (GDS) library.
+  - Retrieves and visualizes properties of detected clusters
+- **Usage**:
+  Open the Jupyter Notebook and follow the instructions to:
+  - Query the Neo4j database.
+  - Get general statistics about nodes, triple and pathways, and analyze them.
+ 
+### 2. `import-neo4j-all-dbs.ipynb`
+- **Purpose**: These scripts are designed to upload multiple databases into Neo4j, providing a streamlined workflow for graph-based data integration and analysis.
+- **Prerequisites**: 
+  - bel_json_import package for BEL data conversion to eBEL format
+  - Properly formatted database extracts
+- **Key Features**:
+  - Efficiently import graph data into Neo4j using a common schema
+  - Seamless integration of complex biological networks
+  - Privacy-aware data handling
+- **Usage**:
+  - Open the notebook in Jupyter Notebook or JupyterLab
+  - Place data in required locations
+  - Run cells specific to each source
+
 
 ## Exploring the Covid-NDD Comorbidity Database 
 
