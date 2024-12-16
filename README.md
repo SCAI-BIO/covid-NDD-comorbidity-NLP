@@ -6,7 +6,7 @@ This repository contains the data, scripts, and analyses used in the research ti
 ## Table of Contents
 - [Overview](#overview)
 - [Data](#data)
-- [Sources](#src)
+- [Sources](#sources)
 - [Notebooks](#notebooks)
 - [Getting Started](#getting-started)
 - [Exploring the Covid-NDD Comorbidity Database](#Exploring-the-Covid-NDD-Comorbidity-Database)
@@ -43,36 +43,74 @@ The repository includes the following directories:
   python comorbidity-hypothesis-db.py
 
 ### 2. `comorbidity-space-neo4j-upload.py`
-- **Purpose**: Uplaoding the comorbidity hypothesis paths to the AuraDB instance for comorbidity hypothesis exploration. The candidate curated paths are stored in a text file, in **'src/comorbidity_paths.txt'**. The entities from this path list are harmonized based on various namespace and ontologies such as MESH, ChEBI or Disease Ontology. List of harmonized entities are added in **'src/harmonized_hypotheses.csv'**.
+- **Purpose**: Uplaoding the comorbidity hypothesis paths to the AuraDB instance for comorbidity hypothesis exploration. The candidate curated paths along with pmids and evidences are stored in **'src/hypothesis_pmid_evidences.csv'**. 
 - **Key Features**:
   - Simplifies uploading the hypothesis comorbidity candidates.
 - **Usage**:
   Run the script, and the Neo4j Browser will open in your default web browser:
   ```bash
   python comorbidity-space-neo4j-upload.py
-
-## Notebooks
-
-### 1. `analyze-neo4j.ipynb`
-- **Purpose**: Analyzes the knowledge graph loaded to  Neo4j to extract insights.
+  
+### 3. `hypothesis-graph-database-upload.py`
+- **Purpose**: Manages the upload of hypothesis-based graph data to Neo4j.
 - **Key Features**:
-  - Counts nodes and edges in the graph.
-  - Executes community detection algorithms like Louvain using Neo4j's Graph Data Science (GDS) library.
-  - Retrieves and visualizes properties of detected clusters
+  - Dedicated notebook for hypothesis data integration
+  - Structured data validation
+  - Automated graph relationship creation
 - **Usage**:
-  Open the Jupyter Notebook and follow the instructions to:
-  - Query the Neo4j database.
-  - Get general statistics about nodes, triple and pathways, and analyze them.
- 
-### 2. `import-neo4j-all-dbs.ipynb`
-- **Purpose**: These scripts are designed to upload multiple databases into Neo4j, providing a streamlined workflow for graph-based data integration and analysis. A key requirement for using this script is the bel_json_import package, which is specifically developed to convert BEL (Biological Expression Language) data into the eBEL (enhanced BEL) format. This conversion ensures seamless integration and analysis of complex biological networks within Neo4j and other graph-based platforms.
+  - Open in Jupyter environment
+  - Configure data paths
+  - Execute cells sequentially
 
-To successfully use this script, the data extracted from each database must be properly formatted and made accessible before initiating the upload process to Neo4j. Due to privacy concerns associated with the databases, the data is not included in this repository. 
-- **Key Features**:
-- Efficiently import graph data into Neo4j using a common schema.
-- **Usage**:
-- Open the notebook (import-neo4j-all-dbs.ipynb) in Jupyter Notebook or JupyterLab. Put the data in the required palces, and run each cell specific to each source to upload files.
-- 
+- **Purpose**:
+
+A comprehensive data integration pipeline for analyzing relationships between COVID-19 and neurodegenerative diseases (NDDs). This pipeline processes and uploads three types of biomedical data to Neo4j:
+
+1. Triples hypothesis (filtered triples from all dbs)
+2. Pathway hypothesis (filtered pathways)
+3. GWAS Data (shared variants)
+
+The project leverages Neo4j for graph-based analysis and integrates various data sources to explore disease relationships.
+
+## Quick Start
+
+1. **Install Dependencies**
+```bash
+pip install pandas neo4j requests rapidfuzz fuzzywuzzy python-Levenshtein
+```
+
+2. **Configure Neo4j Connection**
+Create `config.json`:
+```json
+{
+    "neo4j": {
+        "uri": "neo4j+s://09f8d4e9.databases.neo4j.io",
+        "user": "neo4j",
+        "password": "your-password"
+    }
+}
+```
+
+3. **Run Pipeline**
+```python
+from hypothesis-graph-database-upload import DataPipelineRunner, Neo4jConfig
+
+# Configure Neo4j connection
+config = Neo4jConfig(
+    uri="your_neo4j_uri",
+    user="your_username",
+    password="your_password"
+)
+
+# Run pipeline
+runner = DataPipelineRunner(config)
+runner.run(
+    triple_file="path/to/cleaned_all_db_association.csv",
+    pathway_file="path/to/your/hypothesis_pmid_evidences.csv",
+    gwas_file="path/to/your/shared-variants.xlsx"
+)
+```
+
 ## Getting Started
 
 ### Prerequisites
@@ -83,6 +121,34 @@ To successfully use this script, the data extracted from each database must be p
 
   ```bash
   pip install neo4j pandas
+ 
+## Notebooks
+
+### 1. `analyze-neo4j.ipynb`
+- **Purpose**: Analyzes the knowledge graph loaded to Neo4j to extract insights.
+- **Key Features**:
+  - Counts nodes and edges in the graph.
+  - Executes community detection algorithms like Louvain using Neo4j's Graph Data Science (GDS) library.
+  - Retrieves and visualizes properties of detected clusters
+- **Usage**:
+  Open the Jupyter Notebook and follow the instructions to:
+  - Query the Neo4j database.
+  - Get general statistics about nodes, triple and pathways, and analyze them.
+ 
+### 2. `import-neo4j-all-dbs.ipynb`
+- **Purpose**: These scripts are designed to upload multiple databases into Neo4j, providing a streamlined workflow for graph-based data integration and analysis.
+- **Prerequisites**: 
+  - bel_json_import package for BEL data conversion to eBEL format
+  - Properly formatted database extracts
+- **Key Features**:
+  - Efficiently import graph data into Neo4j using a common schema
+  - Seamless integration of complex biological networks
+  - Privacy-aware data handling
+- **Usage**:
+  - Open the notebook in Jupyter Notebook or JupyterLab
+  - Place data in required locations
+  - Run cells specific to each source
+
 
 ## Exploring the Covid-NDD Comorbidity Database 
 
@@ -94,7 +160,7 @@ To manually explore the comorbidity graph database:
 
 2. **Enter the Connection Details**:
 
-   - **URI**: `neo4j+s://1af6a087.databases.neo4j.io`
+   - **URI**: `neo4j+s://09f8d4e9.databases.neo4j.io`
 
    - **Username**: `neo4j`
 
