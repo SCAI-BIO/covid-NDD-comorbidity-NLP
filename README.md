@@ -50,7 +50,7 @@ The repository includes the following directories:
 - **Usage**:
   Run the script to upload the data:
   ```bash
-  python cleaned_comorbidity_neo4j_upload.py
+  python comorbidity_database_neo4j_upload.py
   ```
 
 ## Getting Started
