@@ -41,75 +41,17 @@ The repository includes the following directories:
   Run the script, and the Neo4j Browser will open in your default web browser:
   ```bash
   python comorbidity-hypothesis-db.py
+### 2. `comorbidity_database_neo4j_upload.py`
 
-### 2. `comorbidity-space-neo4j-upload.py`
-- **Purpose**: Uplaoding the comorbidity hypothesis paths to the AuraDB instance for comorbidity hypothesis exploration. The candidate curated paths along with pmids and evidences are stored in **'src/hypothesis_pmid_evidences.csv'**. 
+- **Purpose**: Uploads curated comorbidity hypothesis paths to the Neo4j AuraDB instance.
 - **Key Features**:
-  - Simplifies uploading the hypothesis comorbidity candidates.
+  - Simplifies uploading comorbidity hypothesis candidates.
+  - Standardizes and normalizes graph entities for compatibility.
 - **Usage**:
-  Run the script, and the Neo4j Browser will open in your default web browser:
+  Run the script to upload the data:
   ```bash
-  python comorbidity-space-neo4j-upload.py
-  
-### 3. `hypothesis-graph-database-upload.py`
-- **Purpose**: Manages the upload of hypothesis-based graph data to Neo4j.
-- **Key Features**:
-  - Dedicated notebook for hypothesis data integration
-  - Structured data validation
-  - Automated graph relationship creation
-- **Usage**:
-  - Open in Jupyter environment
-  - Configure data paths
-  - Execute cells sequentially
-
-- **Purpose**:
-
-A comprehensive data integration pipeline for analyzing relationships between COVID-19 and neurodegenerative diseases (NDDs). This pipeline processes and uploads three types of biomedical data to Neo4j:
-
-1. Triples hypothesis (filtered triples from all dbs)
-2. Pathway hypothesis (filtered pathways)
-3. GWAS Data (shared variants)
-
-The project leverages Neo4j for graph-based analysis and integrates various data sources to explore disease relationships.
-
-## Quick Start
-
-1. **Install Dependencies**
-```bash
-pip install pandas neo4j requests rapidfuzz fuzzywuzzy python-Levenshtein
-```
-
-2. **Configure Neo4j Connection**
-Create `config.json`:
-```json
-{
-    "neo4j": {
-        "uri": "neo4j+s://09f8d4e9.databases.neo4j.io",
-        "user": "neo4j",
-        "password": "your-password"
-    }
-}
-```
-
-3. **Run Pipeline**
-```python
-from hypothesis-graph-database-upload import DataPipelineRunner, Neo4jConfig
-
-# Configure Neo4j connection
-config = Neo4jConfig(
-    uri="your_neo4j_uri",
-    user="your_username",
-    password="your_password"
-)
-
-# Run pipeline
-runner = DataPipelineRunner(config)
-runner.run(
-    triple_file="path/to/cleaned_all_db_association.csv",
-    pathway_file="path/to/your/hypothesis_pmid_evidences.csv",
-    gwas_file="path/to/your/shared-variants.xlsx"
-)
-```
+  python cleaned_comorbidity_neo4j_upload.py
+  ```
 
 ## Getting Started
 
