@@ -24,7 +24,7 @@ The repository includes the following directories:
 
 1. **Expert-curated-publications**: Contains manually curated publications relevant to the study, ensuring high-quality and accurate information.
 
-2. **PubTator3-results**: Includes results from PubTator3, a web-based system that offers a comprehensive set of features and tools for exploring biomedical literature using advanced text mining and AI techniques. :contentReference[oaicite:0]{index=0}
+2. **PubTator3-results**: Includes results from PubTator3, a web-based system that offers a comprehensive set of features and tools for exploring biomedical literature using advanced text mining and AI techniques.
 
 3. **Sherpa-results**: Houses outputs from Sherpa, a tool designed to assist in the curation of biomedical literature by providing automated annotations and insights.
 
