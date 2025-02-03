@@ -1,6 +1,6 @@
 # Exploring the Current State of Knowledge on the Link Between COVID-19 and Neurodegeneration
 
-This repository contains the data, scripts, and analyses used in the research titled **"Unravelling the Co-Morbidity between COVID-19 and Neurodegenerative Diseases Through Multi-scale Graph Analysis: A Systematic investigation of Biological Databases and Text Mining"**. The project leverages Neo4j paltform for graph-based analysis and integrates natural language processing to explore relationships between COVID-19 and neurodegenerative diseases (NDDs).
+This repository contains the data, scripts, and analyses used in the research titled **"Unravelling the Co-Morbidity between COVID-19 and Neurodegenerative Diseases Through Multi-scale Graph Analysis: A Systematic investigation of Biological Databases and Text Mining"**. The project leverages Neo4j paltform for graph-based analysis and integrates natural language processing to explore relationships between COVID-19 and neurodegenerative diseases (NDDs). The constructed comorbidity database is publicly available in Aura database, with credentials provided below.
 ![Logo](images/workflow.png)
 
 ## Table of Contents
