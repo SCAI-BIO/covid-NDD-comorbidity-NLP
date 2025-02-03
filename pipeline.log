@@ -1,0 +1,5 @@
+2024-12-16 11:49:19,646 - root - WARNING - Hypothesis file not found: path/to/cleaned_all_db_association.csv
+2024-12-16 11:49:19,647 - root - WARNING - Pathway file not found: path/to/your/hypothesis_pmid_evidences.csv
+2024-12-16 11:49:19,647 - root - WARNING - GWAS file not found: path/to/your/shared-variants.xlsx
+2024-12-16 11:49:19,648 - root - INFO - Pipeline completed: 0/3 processes successful
+2024-12-16 11:49:19,648 - root - WARNING - Failed processes: hypothesis, pathway, gwas
