@@ -1,0 +1,6 @@
+2025-02-03 09:51:27,268 - __main__ - INFO - Starting hypothesis data processing
+2025-02-03 09:51:27,330 - __main__ - ERROR - Error processing hypothesis data: name 'Neo4jUploader' is not defined
+2025-02-03 09:51:27,330 - root - WARNING - Pathway file not found: all-dbs/cleaned_all_db_association.csv
+2025-02-03 09:51:27,330 - root - WARNING - GWAS file not found: GWAS/shared-variants.xlsx
+2025-02-03 09:51:27,330 - root - INFO - Pipeline completed: 0/3 processes successful
+2025-02-03 09:51:27,330 - root - WARNING - Failed processes: hypothesis, pathway, gwas
