@@ -30,6 +30,10 @@ The repository includes the following directories:
 
 4. **Textual-corpora-for-textmining**: Comprises textual corpora prepared for text mining purposes, facilitating the extraction of meaningful patterns and relationships regarding COVID-19 and NDD.
 
+5. **comorbidity_paths.txt**: Some example comorbidity pathways.
+
+6. **hypothesis_pmid_evidences**: Some of the comorbidity triples with source evidence  uploaded to the databases.
+
 ## Sources
 
 ### 1. `comorbidity-hypothesis-db.py`
@@ -77,20 +81,6 @@ The repository includes the following directories:
   - Query the Neo4j database.
   - Get general statistics about nodes, triple and pathways, and analyze them.
  
-### 2. `import-neo4j-all-dbs.ipynb`
-- **Purpose**: These scripts are designed to upload multiple databases into Neo4j, providing a streamlined workflow for graph-based data integration and analysis.
-- **Prerequisites**: 
-  - bel_json_import package for BEL data conversion to eBEL format
-  - Properly formatted database extracts
-- **Key Features**:
-  - Efficiently import graph data into Neo4j using a common schema
-  - Seamless integration of complex biological networks
-  - Privacy-aware data handling
-- **Usage**:
-  - Open the notebook in Jupyter Notebook or JupyterLab
-  - Place data in required locations
-  - Run cells specific to each source
-
 
 ## Exploring the Covid-NDD Comorbidity Database 
 
