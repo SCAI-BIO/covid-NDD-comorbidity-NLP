@@ -32,7 +32,7 @@ The repository includes the following directories:
 
 5. **comorbidity_paths.txt**: Some example comorbidity pathways.
 
-6. **hypothesis_pmid_evidences**: Some of the comorbidity triples with source evidence  uploaded to the databases.
+6. **hypothesis_pmid_evidences.xlsx**: Some of the comorbidity triples with source evidence  uploaded to the databases.
 
 ## Sources
 
