@@ -34,6 +34,8 @@ The repository includes the following directories:
 
 6. **hypothesis_pmid_evidences.csv**: Some of the comorbidity triples with source evidence  uploaded to the databases.
 
+7. **comorbidity-db-neo4j.dump**: The neo4j dump file of the constructed comorbidity database.
+
 ## Sources
 
 ### 1. `comorbidity-hypothesis-db.py`
