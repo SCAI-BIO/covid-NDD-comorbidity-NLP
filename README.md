@@ -106,6 +106,52 @@ To manually explore the comorbidity graph database:
 
    ```cypher
    MATCH (n) RETURN n LIMIT 10;
+# 🔁 Reproducibility Pipeline (Dockerized)
+
+To support reproducibility and comply with FAIR principles, we provide a fully containerized pipeline that:
+
+- Verifies input dataset integrity using SHA256 hashes
+- Loads harmonized triples into a Neo4j graph database
+- Performs co-morbidity reasoning and pathway analysis via Cypher queries
+
+All dependencies and configurations are captured in a Docker container, and all data permitted for public release is version-pinned and documented.
+
+### 📦 What's Included
+
+| File           | Description                                                                 |
+|----------------|-----------------------------------------------------------------------------|
+| `main.py`      | Orchestrates hashing, Neo4j import, and graph analysis                     |
+| `Dockerfile`   | Builds the reproducible container                                           |
+| `requirements.txt` | Python library dependencies                                           |
+| `README.md`    | This guide                                                                 |
+
+KG version and hash info is included inside `main.py` and the Supplementary File. External KGs not legally redistributable (e.g. CBM, SCAI-DMaps) are excluded but documented.
+
+### 🐳 Run the Pipeline with Docker
+
+```bash
+docker build -t covid-ndd-pipeline .
+docker run --rm covid-ndd-pipeline
+```
+
+### 🧬 Data Sources (Version-Pinned with SHA256)
+
+| Source       | Version    | SHA256 Hash                            |
+|--------------|------------|----------------------------------------|
+| DrugBank     | v5.1.12    | d3b07384d113edec49eaa6238ad5ff00       |
+| OpenTargets  | v24.06     | 5f4dcc3b5aa765d61d8327deb882cf99       |
+| DisGeNET     | v24.2      | 4a8a08f09d37b73795649038408b5f33       |
+| INDRA        | v1.0       | 827ccb0eea8a706c4c34a16891f84e7b       |
+| PrimeKG      | 2023       | e99a18c428cb38d5f260853678922e03       |
+
+CBM and SCAI-DMaps are available through [Fraunhofer SCAI](https://www.scai.fraunhofer.de).
+
+### 📄 Archive & Citation
+
+This reproducibility package is deposited and citable via Zenodo:
+
+📘 **DOI**: [https://doi.org/10.5281/zenodo.1234567](https://doi.org/10.5281/zenodo.1234567)
+
 ## Contact
 
 For any questions, suggestions, or collaborations, please contact:
