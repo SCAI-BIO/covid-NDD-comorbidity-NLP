@@ -150,7 +150,7 @@ CBM and SCAI-DMaps are available through [Fraunhofer SCAI](https://www.scai.frau
 
 This reproducibility package is deposited and citable via Zenodo:
 
-📘 **DOI**: [https://doi.org/10.5281/zenodo.1234567](https://doi.org/10.5281/zenodo.1234567)
+📘 **DOI**: [https://doi.org/10.5281/zenodo.1234567](https://doi.org/10.5281/zenodo.15781240)
 
 ## Contact
 
