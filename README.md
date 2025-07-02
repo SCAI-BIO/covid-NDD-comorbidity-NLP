@@ -123,7 +123,7 @@ To manually explore the comorbidity graph database:
 
    ```cypher
    MATCH (n) RETURN n LIMIT 10;
-# 🔁 Reproducibility Pipeline (Dockerized)
+# Reproducibility Pipeline (Dockerized)
 
 To support reproducibility and comply with FAIR principles, we provide a fully containerized pipeline that:
 
