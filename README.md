@@ -83,6 +83,23 @@ The repository includes the following directories:
   - Query the Neo4j database.
   - Get general statistics about nodes, triple and pathways, and analyze them.
  
+### 2. extract-pmids.ipynb
+
+- **Purpose**: Systematically extracts PubMed IDs (PMIDs) from PubMed database using MeSH terms for COVID-19 neurological manifestations research.
+- **Key Features**:
+  - Reads MeSH search terms from external text file (mesh_terms_refined.txt).
+  - Queries PubMed via NCBI E-utilities API with automated batch processing.
+  - Filters publications by date range (2021-2024) using publication date [pdat] field.
+  - Processes XML responses and converts to Python dictionaries using xmltodict.
+  - Extracts and saves PMIDs for each MeSH term to individual text files.
+
+**Usage**:
+Open the Jupyter Notebook and follow the instructions to:
+  - Ensure mesh_terms_refined.txt file contains your MeSH search terms (one per line).
+  - Create results-refined/ directory for output files.
+  - Execute cells to automatically query PubMed for each term and save PMIDs to separate files.
+  - Monitor search progress and review extracted PMID counts for each MeSH term.
+ 
 
 ## Exploring the Covid-NDD Comorbidity Database 
 
