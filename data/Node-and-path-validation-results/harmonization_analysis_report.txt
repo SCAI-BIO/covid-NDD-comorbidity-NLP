@@ -1,0 +1,36 @@
+
+ENHANCED KNOWLEDGE GRAPH HARMONIZATION ANALYSIS REPORT
+=====================================================
+
+METHODOLOGY:
+Following Recommendation 4, we implemented a hybrid harmonization approach combining:
+1. MONDO disease ontology mapping for 27 disease entities
+2. TF-IDF clustering (threshold=0.9) identifying 6 synonym groups
+3. Fuzzy matching against 54 canonical biomedical terms
+4. Statistical validation using Spearman and Pearson correlations
+
+KEY FINDINGS:
+
+Path Stability Analysis:
+- Average path count change: 1.7%
+- High stability sources: 5/15 knowledge graphs
+- Maximum impact: 10.0% (within acceptable variance)
+
+Ranking Correlation Analysis:
+- Average Spearman correlation: 0.998
+- 5 sources show good-to-excellent stability
+- All correlations indicate stable centrality rankings
+
+Biological Validation:
+- 28 key biological concepts preserved
+- Critical COVID-19-NDD pathway nodes maintained rankings
+- Neuroinflammation and immune response pathways show robust stability
+
+INTERPRETATION:
+Our systematic harmonization analysis addresses the reviewer's concern about unanalyzed 
+redundancy impacts. Results demonstrate that while lexical variants exist (particularly 
+in text-mined sources), they do not substantially affect core biological conclusions 
+about COVID-19-NDD comorbidity mechanisms.
+
+The stability of results across both curated and harmonized datasets strengthens 
+confidence in our identified pathways and biomarkers.

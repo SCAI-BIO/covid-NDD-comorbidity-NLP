@@ -1,0 +1,7 @@
+Knowledge_Graph,Unique_Paths_Before,Unique_Paths_After,Delta_Paths,Delta_Percentage,Path_Overlap,Overlap_Percentage,Stability_Score
+opentargets+disgenet_un_paths,798,798,0,0.0,96,12.03,High
+cbm-comorbidity-path_un_paths,66,66,0,0.0,8,12.12,High
+pubtator-comorbidity_un_paths,1,1,0,0.0,0,0.0,High
+scaiDMaps-comorbidit_un_paths,44,44,0,0.0,0,0.0,High
+sherpa-comorbidity-p_un_paths,10,9,-1,-10.0,0,0.0,Medium
+primekg-comorbidity-_un_paths,413,413,0,0.0,55,13.32,High
