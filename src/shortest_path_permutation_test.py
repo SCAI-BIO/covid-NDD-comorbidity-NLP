@@ -17,8 +17,8 @@ warnings.filterwarnings('ignore')
 
 def analyze_complete_knowledge_graph(csv_path="database-all-triples.csv", 
                                    use_word_embeddings=True, 
-                                   covid_similarity_threshold=0.3,
-                                   ndd_similarity_threshold=0.3):
+                                   covid_similarity_threshold=0.6,
+                                   ndd_similarity_threshold=0.6):
     """
     COVID-NDD enrichment analysis using semantic similarity for node identification
     """
