@@ -111,7 +111,7 @@ To manually explore the comorbidity graph database:
 
 2. **Enter the Connection Details**:
 
-   - **URI**: `neo4j+s://09f8d4e9.databases.neo4j.io`
+   - **URI**: `neo4j+s://b4846259.databases.neo4j.io`
 
    - **Username**: `neo4j`
 
