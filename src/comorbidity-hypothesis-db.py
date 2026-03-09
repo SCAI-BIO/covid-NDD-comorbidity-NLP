@@ -1,7 +1,9 @@
 import webbrowser
 
 # Your Neo4j AuraDB connection details
-NEO4J_URI = "neo4j+s://73bd15ea.databases.neo4j.io"
+NEO4J_URI = "neo4j+s://72180db8.databases.neo4j.io
+
+"
 NEO4J_USER = "neo4j"
 NEO4J_PASSWORD = "ZL8OVno8ZQ21_YhxyKOOJScde9wBOoRBtFL7Wxz1lgQ"
 
